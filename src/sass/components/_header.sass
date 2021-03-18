@@ -1,14 +1,85 @@
 header
-    ul
-        li
-            width: 10em
-            height: 6em
-            transition: 1s
+    text-transform: uppercase
+    .barre-gauche
+        position: fixed
+        top: 0
+        width: 7em
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        border-right: solid 1px #1717170b
+        .logo
+            font-size: 28px
+            height: 20%
             display: flex
-            justify-content: center
+            flex-direction: column
             align-items: center
-    ul:hover
-        color: grey
-        li:hover
-            color: white
-            transform: rotate(-90deg)
+            padding-top: 50px 
+            .return
+                transform: rotate(180deg)
+                color: #ffffff8c
+        .nav-link
+            align-items: center
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            ul
+                li
+                    margin: 40px 0px
+                    padding: 25px 10px
+                    transition: 1.4s
+                    font-size: 23px
+                    text-align: center
+                    a
+                        color: white
+        ul:hover
+            li
+                a
+                    color: grey
+            li:hover
+                transform: rotate(-90deg)
+                a
+                    color: white
+header
+    .barre-droite
+        position: absolute
+        top: 0
+        right: 0
+        height: 100vh
+        display: flex
+        align-items: center
+        ul
+            li
+                transform: rotate(-90deg)
+                margin: 20px 5px
+                font-size: 12px
+                transition: 1.5s
+                padding: 25px 13px
+                a
+                    color: #ffffff2e
+            li:hover
+                padding-bottom: 70px
+                a
+                    color: white
+header
+    .header-title
+        width: max-content
+        height: 100vh
+        width: 100vw
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        h1
+            font-size: 13em
+            margin: 0px
+            font-weight: bold
+        hr
+            width: 33vw
+            height: 10px
+            background-color: white
+        .return
+            transform: rotate(180deg)
+            color: #ffffff8c
+
