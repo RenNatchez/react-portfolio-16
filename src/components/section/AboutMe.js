@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills';
 
 function AboutMe(props) {
     return (
@@ -18,6 +19,7 @@ function AboutMe(props) {
                     <h2 className="press-h2-7">dés maintenant </h2>
                 </div> 
             </div>
+            <Skills/>
         </section>
     );
 }
