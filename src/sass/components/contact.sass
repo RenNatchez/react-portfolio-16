@@ -1,0 +1,54 @@
+.contact
+    display: flex
+    padding: 0em 7em
+    width: 50
+    height: 100vh
+    .text
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            width: 40%
+            h2
+                font-size: 4em
+                span
+                    font-size: 1.5em
+            p
+                margin-top: 2em
+                font-size: 1.2em
+                color: #ffffff2e
+    .input
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            display: flex
+            flex-direction: column
+            input,textarea
+                all: unset
+                width: 500px
+                border-bottom: solid 1px  #ffffff2e
+                transition: 3sec
+                margin-bottom: 35px
+            textarea
+                height: 100px
+            input:focus
+                border-bottom: red 1px solid
+            textarea:focus
+                border-bottom: red 1px solid
+            h2
+                text-align: right
+                margin-top: 50px
+                cursor: pointer
+                background-color: white
+                color: black
+                width: max-content
+                padding: 5px 10px
+                margin-left: 200px
+            h2:hover
+                background-color: black
+                color: white
