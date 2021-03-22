@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ContactText from '../components/Contact';
 import HeaderNoTitle from '../components/header/HeaderNoTitle';
 
 function Contact(props) {
     return (
-        <div>
+        <Fragment>
             <HeaderNoTitle/>
             <ContactText/>
-        </div>
+        </Fragment>
     );
 }
 

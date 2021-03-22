@@ -1,0 +1,58 @@
+.projet
+    height: 100vh
+    margin-left: 7em
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .card
+        margin: auto
+        height: 85%
+        width: 22%
+        box-shadow: rgba(241, 241, 241, 0.16) 0px 1px 4px;
+        background-size: 150%
+        background-position: top
+        background-repeat: no-repeat
+        transition: 6s
+        margin-bottom: 30px
+        div
+            display: none
+            margin-top: 120%
+            text-align: center
+            button
+                all: unset
+                background-color: #dd1b1b98
+                color: white
+                padding: 5px 10px
+            h2
+            font-size: 30px
+            color: #dd1b1b
+    .card:hover
+        background-position: bottom
+        div
+            display: block
+    .bg-1
+        background-image: url('../../assets/img_site/1.png')
+    .bg-2
+        background-image: url('../../assets/img_site/2.png')
+    .bg-3
+        background-image: url('../../assets/img_site/3.png')
+    .bg-4
+        background-image: url('../../assets/img_site/4.png')
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+    .projet
+        .card
+            width: 45%
+        .bg-1
+            background-size: 200%
+        .bg-4
+            background-size: 200%
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 712px) 
+    .projet
+        margin-left: 0px
+        margin-top: 100vh
+        .card
+            width: 85%

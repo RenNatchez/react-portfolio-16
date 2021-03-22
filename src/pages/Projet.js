@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from '../components/header/Header';
-import HeaderNoTitle from '../components/header/HeaderNoTitle';
+import ProjetCard from '../components/ProjetCard';
 
 function Projet(props) {
     return (
-        <div>
-            <HeaderNoTitle/>
-        </div>
+        <Fragment> 
+            <Header/>
+            <ProjetCard/>
+        </Fragment>
     );
 }
 

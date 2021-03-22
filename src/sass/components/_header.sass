@@ -83,3 +83,27 @@ header
         .return
             transform: rotate(180deg)
             color: #ffffff8c
+@media only screen and (min-device-width: 375px) and (max-device-width: 712px) 
+    header
+        .barre-gauche
+            z-index: 4
+            position: absolute
+            .nav-link
+                ul
+                    li
+                        transform: rotate(-90deg)
+        .header-title
+            z-index: -200
+            width: max-content
+            height: max-content
+            position: absolute
+            top: 37%
+            left: 17%
+            transform: rotate(-90deg)
+            h1
+                font-size: 5em
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+    header
+        .header-title
+            h1
+                font-size: 9em

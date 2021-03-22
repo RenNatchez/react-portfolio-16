@@ -1,0 +1,87 @@
+.contact
+    display: flex
+    padding: 0em 7em
+    width: 50
+    height: 100vh
+    .text
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            width: 40%
+            h2
+                font-size: 4em
+                span
+                    font-size: 1.5em
+            p
+                margin-top: 2em
+                font-size: 1.2em
+                color: #ffffff2e
+    .input
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            display: flex
+            flex-direction: column
+            input,textarea
+                all: unset
+                width: 500px
+                border-bottom: solid 1px  #ffffff2e
+                transition: 3sec
+                margin-bottom: 35px
+            textarea
+                height: 100px
+            input:focus
+                border-bottom: red 1px solid
+            textarea:focus
+                border-bottom: red 1px solid
+            h2
+                text-align: right
+                margin-top: 50px
+                cursor: pointer
+                background-color: white
+                color: black
+                width: max-content
+                padding: 5px 10px
+                margin-left: 200px
+            h2:hover
+                background-color: black
+                color: white
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+    .contact
+        flex-direction: column
+        justify-content: center
+        .text
+            div
+                width: 80%
+                margin-bottom: 50px
+        .input
+            div
+                input,textarea
+                    width: 390px
+@media only screen and (min-device-width: 375px) and (max-device-width: 712px) 
+    .contact
+        flex-direction: column
+        justify-content: center
+        .text
+            div
+                width: 80%
+                margin-bottom: 50px
+                h2
+                    font-size: 2em
+                p
+                    font-size: 0.8em
+        .input
+            div
+                display: flex
+                align-items: center
+                input,textarea
+                    width: 150px
+                h2
+                    margin-left: 0px
+
